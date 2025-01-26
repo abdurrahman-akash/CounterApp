@@ -1,0 +1,93 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6faff;
+  font-family: 'Roboto', sans-serif;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.counter_container {
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.counter_header {
+  margin-bottom: 20px;
+}
+
+.counter_header h2 {
+  font-size: 2rem;
+  color: #333;
+  margin: 0;
+}
+
+.counter_display {
+  background: linear-gradient(135deg, #f9f871, #ffc947);
+  border-radius: 15px;
+  padding: 40px 0;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 3rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 12px;
+  gap: 8px;
+  height: 34px;
+  width: 112px;
+  border: none;
+  background: #ff362b34;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.label {
+  line-height: 20px;
+  font-size: 17px;
+  color: #ff342b;
+  letter-spacing: 1px;
+}
+
+.button:hover {
+  background: #ff362b52;
+}
+
+.button:hover .svg-icon {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
